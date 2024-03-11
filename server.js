@@ -5,7 +5,7 @@ const mongoose =require("mongoose")
 const methodoverride = require("method-override")
 const app=express()
 
-mongoose.connect(`mongodb://localhost/articles`)
+mongoose.connect(`mongodb+srv://chandwanimohit87m:0WieHctQmQh4yK4r@cluster0.daxsy2h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
 app.use(express.urlencoded({extended : false}))
 app.use(methodoverride("_method"))
 app.set("view engine","ejs")
